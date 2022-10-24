@@ -14,8 +14,10 @@
         <aws.sdk.version>2.17.281</aws.sdk.version>
         <cdk.version>1.174.0</cdk.version>
         <compiler-plugin.version>3.8.1</compiler-plugin.version>
-        <drools.version>8.29.0.Final</drools.version>
-        <kogito.bom.version>1.29.0.Final</kogito.bom.version>
+        <drools.version>8.19.0.Beta</drools.version>
+        <kogito.bom.version>1.19.0.Final</kogito.bom.version>
+        <kogito.bom.artifact-id>kogito-bom</kogito.bom.artifact-id>
+        <kogito.bom.group-id>org.kie.kogito</kogito.bom.group-id>
         <kotest.version>5.4.2</kotest.version>
         <kotlin.code.style>official</kotlin.code.style>
         <kotlin.version>1.7.0</kotlin.version>
@@ -26,7 +28,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <quarkus.platform.artifact-id>quarkus-bom</quarkus.platform.artifact-id>
         <quarkus.platform.group-id>io.quarkus</quarkus.platform.group-id>
-        <quarkus.platform.version>2.13.3.Final</quarkus.platform.version>
+        <quarkus.platform.version>2.9.2.Final</quarkus.platform.version>
         <serialization.version>1.4.0</serialization.version>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
         <graalvm.version>22.2.0</graalvm.version>
@@ -44,6 +46,13 @@
                 <groupId>io.quarkus</groupId>
                 <artifactId>quarkus-bom</artifactId>
                 <version>${quarkus.platform.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>${kogito.bom.group-id}</groupId>
+                <artifactId>${kogito.bom.artifact-id}</artifactId>
+                <version>${kogito.bom.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -200,12 +209,14 @@
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-quarkus-rules</artifactId>
-            <version>${kogito.bom.version}</version>
         </dependency>
         <dependency>
             <groupId>org.kie.kogito</groupId>
             <artifactId>kogito-quarkus</artifactId>
-            <version>${kogito.bom.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.kie.kogito</groupId>
+            <artifactId>kogito-drools</artifactId>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>
@@ -214,7 +225,6 @@
         <dependency>
             <groupId>org.drools</groupId>
             <artifactId>drools-decisiontables</artifactId>
-            <version>${drools.version}</version>
         </dependency>
         <dependency>
             <groupId>io.quarkus</groupId>

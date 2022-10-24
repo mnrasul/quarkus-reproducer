@@ -9,7 +9,7 @@ import javax.enterprise.context.ApplicationScoped
 import com.sunrun.pricing.rest.*
 import com.sunrun.pricing.config.ConfigService
 import com.sunrun.pricing.helpers.extensions.get
-import org.drools.ruleunits.api.DataSource
+import org.kie.kogito.rules.DataSource
 
 @ApplicationScoped
 class KogitoQueryHandler(
@@ -37,6 +37,8 @@ class KogitoQueryHandler(
             .map { it as RulesEngineOutput }.ifEmpty {
                 throw IllegalArgumentException("No drools rule matches found for request $request")
             }
+        // .filterPriority() // TODO enable if you have priority rules
+            ?: listOf()
     }
 
     fun queryId(query: String): QueryId = appRoot.get<RuleUnitIds>().get<RulesEngineUnit>().queries().get(query)

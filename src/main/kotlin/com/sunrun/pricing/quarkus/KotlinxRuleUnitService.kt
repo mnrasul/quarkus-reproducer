@@ -2,11 +2,12 @@ package com.sunrun.pricing.quarkus
 
 // TODO enable this if you're using the Unified API
 // import com.sunrun.pricing.serialization.polySerializers
+import kotlinx.serialization.ExperimentalSerializationApi
 import kotlinx.serialization.json.Json
-import org.drools.ruleunits.api.RuleUnitData
 import org.kie.kogito.incubation.common.Id
 import org.kie.kogito.incubation.rules.QueryId
 import org.kie.kogito.incubation.rules.RuleUnitId
+import org.kie.kogito.rules.RuleUnitData
 import org.kie.kogito.rules.RuleUnits
 import javax.enterprise.context.ApplicationScoped
 import javax.enterprise.inject.Instance
@@ -32,7 +33,8 @@ class KotlinxRuleUnitService(
         val (ruleUnitId, queryId) = getIds(id)
         val ruleUnit = ruleUnits.get().create(input.javaClass)
         val instance = ruleUnit.createInstance(input)
-        return instance.executeQuery(queryId.queryId()).toList()
+        val executeQuery = instance.executeQuery(queryId.queryId())
+        return executeQuery.flatMap { it.values }
     }
 
     fun getIds(id: Id): Pair<RuleUnitId, QueryId> {
