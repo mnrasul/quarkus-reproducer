@@ -1,0 +1,6176 @@
+package com.sunrun.pricing.quarkus;
+unit RulesEngineUnit;
+//generated from Decision Table
+import com.sunrun.pricing.rest.*;
+import java.math.BigDecimal;
+// rule values at B12, header at B7
+rule "BatteryPrice Prepaid_12"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,000");
+$item.setRule("BatteryPrice-Prepaid Rule 12");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B13, header at B7
+rule "BatteryPrice Prepaid_13"
+/* $8,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$12,000");
+$item.setRule("BatteryPrice-Prepaid Rule 13");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B14, header at B7
+rule "BatteryPrice Prepaid_14"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 14");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B15, header at B7
+rule "BatteryPrice Prepaid_15"
+/* $8,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 15");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B16, header at B7
+rule "BatteryPrice Prepaid_16"
+/* $11,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$12,000");
+$item.setRule("BatteryPrice-Prepaid Rule 16");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B17, header at B7
+rule "BatteryPrice Prepaid_17"
+/* $11,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$12,000");
+$item.setRule("BatteryPrice-Prepaid Rule 17");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B18, header at B7
+rule "BatteryPrice Prepaid_18"
+/* $6,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 18");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B19, header at B7
+rule "BatteryPrice Prepaid_19"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 19");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B20, header at B7
+rule "BatteryPrice Prepaid_20"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$12,000");
+$item.setRule("BatteryPrice-Prepaid Rule 20");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B21, header at B7
+rule "BatteryPrice Prepaid_21"
+/* $12,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 21");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B22, header at B7
+rule "BatteryPrice Prepaid_22"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,000");
+$item.setRule("BatteryPrice-Prepaid Rule 22");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B23, header at B7
+rule "BatteryPrice Prepaid_23"
+/* $14,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$15,000");
+$item.setRule("BatteryPrice-Prepaid Rule 23");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B24, header at B7
+rule "BatteryPrice Prepaid_24"
+/* $15,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 24");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B25, header at B7
+rule "BatteryPrice Prepaid_25"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 25");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B26, header at B7
+rule "BatteryPrice Prepaid_26"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 26");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B27, header at B7
+rule "BatteryPrice Prepaid_27"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,000");
+$item.setRule("BatteryPrice-Prepaid Rule 27");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B28, header at B7
+rule "BatteryPrice Prepaid_28"
+/* $8,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$12,000");
+$item.setRule("BatteryPrice-Prepaid Rule 28");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B29, header at B7
+rule "BatteryPrice Prepaid_29"
+/* $11,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 29");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B30, header at B7
+rule "BatteryPrice Prepaid_30"
+/* $11,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 30");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B31, header at B7
+rule "BatteryPrice Prepaid_31"
+/* $11,000 */
+	when
+		$input: /inputObject[string == "MA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 31");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B32, header at B7
+rule "BatteryPrice Prepaid_32"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 32");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B33, header at B7
+rule "BatteryPrice Prepaid_33"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 33");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B34, header at B7
+rule "BatteryPrice Prepaid_34"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 34");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B35, header at B7
+rule "BatteryPrice Prepaid_35"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 35");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B36, header at B7
+rule "BatteryPrice Prepaid_36"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 36");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B37, header at B7
+rule "BatteryPrice Prepaid_37"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 37");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B38, header at B7
+rule "BatteryPrice Prepaid_38"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 38");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B39, header at B7
+rule "BatteryPrice Prepaid_39"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 39");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B40, header at B7
+rule "BatteryPrice Prepaid_40"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 40");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B41, header at B7
+rule "BatteryPrice Prepaid_41"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 41");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B42, header at B7
+rule "BatteryPrice Prepaid_42"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 42");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B43, header at B7
+rule "BatteryPrice Prepaid_43"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 43");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B44, header at B7
+rule "BatteryPrice Prepaid_44"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 44");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B45, header at B7
+rule "BatteryPrice Prepaid_45"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 45");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B46, header at B7
+rule "BatteryPrice Prepaid_46"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 46");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B47, header at B7
+rule "BatteryPrice Prepaid_47"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 47");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B48, header at B7
+rule "BatteryPrice Prepaid_48"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 48");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B49, header at B7
+rule "BatteryPrice Prepaid_49"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 49");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B50, header at B7
+rule "BatteryPrice Prepaid_50"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 50");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B51, header at B7
+rule "BatteryPrice Prepaid_51"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 51");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B52, header at B7
+rule "BatteryPrice Prepaid_52"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 52");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B53, header at B7
+rule "BatteryPrice Prepaid_53"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 53");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B54, header at B7
+rule "BatteryPrice Prepaid_54"
+/* $5,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$11,000");
+$item.setRule("BatteryPrice-Prepaid Rule 54");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B55, header at B7
+rule "BatteryPrice Prepaid_55"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 55");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B56, header at B7
+rule "BatteryPrice Prepaid_56"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 56");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B57, header at B7
+rule "BatteryPrice Prepaid_57"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 57");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B58, header at B7
+rule "BatteryPrice Prepaid_58"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 58");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B59, header at B7
+rule "BatteryPrice Prepaid_59"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 59");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B60, header at B7
+rule "BatteryPrice Prepaid_60"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "MVEA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 60");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B61, header at B7
+rule "BatteryPrice Prepaid_61"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 61");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B62, header at B7
+rule "BatteryPrice Prepaid_62"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 62");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B63, header at B7
+rule "BatteryPrice Prepaid_63"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 63");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B64, header at B7
+rule "BatteryPrice Prepaid_64"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 64");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B65, header at B7
+rule "BatteryPrice Prepaid_65"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 65");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B66, header at B7
+rule "BatteryPrice Prepaid_66"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 66");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B67, header at B7
+rule "BatteryPrice Prepaid_67"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 67");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B68, header at B7
+rule "BatteryPrice Prepaid_68"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 68");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B69, header at B7
+rule "BatteryPrice Prepaid_69"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 69");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B70, header at B7
+rule "BatteryPrice Prepaid_70"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 70");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B71, header at B7
+rule "BatteryPrice Prepaid_71"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 71");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B72, header at B7
+rule "BatteryPrice Prepaid_72"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,200");
+$item.setRule("BatteryPrice-Prepaid Rule 72");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B73, header at B7
+rule "BatteryPrice Prepaid_73"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,200");
+$item.setRule("BatteryPrice-Prepaid Rule 73");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B74, header at B7
+rule "BatteryPrice Prepaid_74"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,200");
+$item.setRule("BatteryPrice-Prepaid Rule 74");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B75, header at B7
+rule "BatteryPrice Prepaid_75"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,200");
+$item.setRule("BatteryPrice-Prepaid Rule 75");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B76, header at B7
+rule "BatteryPrice Prepaid_76"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 76");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B77, header at B7
+rule "BatteryPrice Prepaid_77"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 77");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B78, header at B7
+rule "BatteryPrice Prepaid_78"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 78");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B79, header at B7
+rule "BatteryPrice Prepaid_79"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 79");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B80, header at B7
+rule "BatteryPrice Prepaid_80"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 80");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B81, header at B7
+rule "BatteryPrice Prepaid_81"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 81");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B82, header at B7
+rule "BatteryPrice Prepaid_82"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 82");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B83, header at B7
+rule "BatteryPrice Prepaid_83"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 83");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B84, header at B7
+rule "BatteryPrice Prepaid_84"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 84");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B85, header at B7
+rule "BatteryPrice Prepaid_85"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 85");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B86, header at B7
+rule "BatteryPrice Prepaid_86"
+/* $4,650 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,500");
+$item.setRule("BatteryPrice-Prepaid Rule 86");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B87, header at B7
+rule "BatteryPrice Prepaid_87"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 87");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B88, header at B7
+rule "BatteryPrice Prepaid_88"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 88");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B89, header at B7
+rule "BatteryPrice Prepaid_89"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 89");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B90, header at B7
+rule "BatteryPrice Prepaid_90"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 90");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B91, header at B7
+rule "BatteryPrice Prepaid_91"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 91");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B92, header at B7
+rule "BatteryPrice Prepaid_92"
+/* $3,625 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 92");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B93, header at B7
+rule "BatteryPrice Prepaid_93"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-Ed"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 93");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B94, header at B7
+rule "BatteryPrice Prepaid_94"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 94");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B95, header at B7
+rule "BatteryPrice Prepaid_95"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 95");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B96, header at B7
+rule "BatteryPrice Prepaid_96"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Penelec"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 96");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B97, header at B7
+rule "BatteryPrice Prepaid_97"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 97");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B98, header at B7
+rule "BatteryPrice Prepaid_98"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 98");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B99, header at B7
+rule "BatteryPrice Prepaid_99"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 99");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B100, header at B7
+rule "BatteryPrice Prepaid_100"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "CPS Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 100");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B101, header at B7
+rule "BatteryPrice Prepaid_101"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 101");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B102, header at B7
+rule "BatteryPrice Prepaid_102"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 102");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B103, header at B7
+rule "BatteryPrice Prepaid_103"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 103");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B104, header at B7
+rule "BatteryPrice Prepaid_104"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Entergy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 104");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B105, header at B7
+rule "BatteryPrice Prepaid_105"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 105");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B106, header at B7
+rule "BatteryPrice Prepaid_106"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 106");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B107, header at B7
+rule "BatteryPrice Prepaid_107"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 107");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B108, header at B7
+rule "BatteryPrice Prepaid_108"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 108");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B109, header at B7
+rule "BatteryPrice Prepaid_109"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 109");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B110, header at B7
+rule "BatteryPrice Prepaid_110"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 110");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B111, header at B7
+rule "BatteryPrice Prepaid_111"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 111");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B112, header at B7
+rule "BatteryPrice Prepaid_112"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 112");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B113, header at B7
+rule "BatteryPrice Prepaid_113"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 113");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B114, header at B7
+rule "BatteryPrice Prepaid_114"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 114");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B115, header at B7
+rule "BatteryPrice Prepaid_115"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 115");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B116, header at B7
+rule "BatteryPrice Prepaid_116"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 116");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B117, header at B7
+rule "BatteryPrice Prepaid_117"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 117");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B118, header at B7
+rule "BatteryPrice Prepaid_118"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 118");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B119, header at B7
+rule "BatteryPrice Prepaid_119"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 119");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B120, header at B7
+rule "BatteryPrice Prepaid_120"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 120");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B121, header at B7
+rule "BatteryPrice Prepaid_121"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 121");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B122, header at B7
+rule "BatteryPrice Prepaid_122"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 122");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B123, header at B7
+rule "BatteryPrice Prepaid_123"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 123");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B124, header at B7
+rule "BatteryPrice Prepaid_124"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 124");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B125, header at B7
+rule "BatteryPrice Prepaid_125"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 125");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B126, header at B7
+rule "BatteryPrice Prepaid_126"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 126");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B127, header at B7
+rule "BatteryPrice Prepaid_127"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 127");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B128, header at B7
+rule "BatteryPrice Prepaid_128"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 128");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B129, header at B7
+rule "BatteryPrice Prepaid_129"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 129");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B130, header at B7
+rule "BatteryPrice Prepaid_130"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 130");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B131, header at B7
+rule "BatteryPrice Prepaid_131"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 131");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B132, header at B7
+rule "BatteryPrice Prepaid_132"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 132");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B133, header at B7
+rule "BatteryPrice Prepaid_133"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 133");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B134, header at B7
+rule "BatteryPrice Prepaid_134"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 134");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B135, header at B7
+rule "BatteryPrice Prepaid_135"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 135");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B136, header at B7
+rule "BatteryPrice Prepaid_136"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 136");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B137, header at B7
+rule "BatteryPrice Prepaid_137"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 137");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B138, header at B7
+rule "BatteryPrice Prepaid_138"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 138");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B139, header at B7
+rule "BatteryPrice Prepaid_139"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 139");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B140, header at B7
+rule "BatteryPrice Prepaid_140"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 140");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B141, header at B7
+rule "BatteryPrice Prepaid_141"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 141");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B142, header at B7
+rule "BatteryPrice Prepaid_142"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 142");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B143, header at B7
+rule "BatteryPrice Prepaid_143"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 143");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B144, header at B7
+rule "BatteryPrice Prepaid_144"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 144");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B145, header at B7
+rule "BatteryPrice Prepaid_145"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 145");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B146, header at B7
+rule "BatteryPrice Prepaid_146"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 146");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B147, header at B7
+rule "BatteryPrice Prepaid_147"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 147");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B148, header at B7
+rule "BatteryPrice Prepaid_148"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 148");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B149, header at B7
+rule "BatteryPrice Prepaid_149"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 149");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B150, header at B7
+rule "BatteryPrice Prepaid_150"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 150");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B151, header at B7
+rule "BatteryPrice Prepaid_151"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 151");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B152, header at B7
+rule "BatteryPrice Prepaid_152"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 152");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B153, header at B7
+rule "BatteryPrice Prepaid_153"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 153");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B154, header at B7
+rule "BatteryPrice Prepaid_154"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-Ed"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 154");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B155, header at B7
+rule "BatteryPrice Prepaid_155"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 155");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B156, header at B7
+rule "BatteryPrice Prepaid_156"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 156");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B157, header at B7
+rule "BatteryPrice Prepaid_157"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 157");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B158, header at B7
+rule "BatteryPrice Prepaid_158"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 158");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B159, header at B7
+rule "BatteryPrice Prepaid_159"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 159");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B160, header at B7
+rule "BatteryPrice Prepaid_160"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "CPS Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 160");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B161, header at B7
+rule "BatteryPrice Prepaid_161"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 161");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B162, header at B7
+rule "BatteryPrice Prepaid_162"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 162");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B163, header at B7
+rule "BatteryPrice Prepaid_163"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 163");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B164, header at B7
+rule "BatteryPrice Prepaid_164"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Entergy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 164");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B165, header at B7
+rule "BatteryPrice Prepaid_165"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 165");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B166, header at B7
+rule "BatteryPrice Prepaid_166"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 166");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B167, header at B7
+rule "BatteryPrice Prepaid_167"
+/* $99,999 */
+	when
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$99,999");
+$item.setRule("BatteryPrice-Prepaid Rule 167");
+$item.setPriority(6);
+		outputObject.add($item);
+end
+
+// rule values at B168, header at B7
+rule "BatteryPrice Prepaid_168"
+/* $99,999 */
+	when
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$99,999");
+$item.setRule("BatteryPrice-Prepaid Rule 168");
+$item.setPriority(6);
+		outputObject.add($item);
+end
+
+// rule values at B169, header at B7
+rule "BatteryPrice Prepaid_169"
+/* $99,999 */
+	when
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$99,999");
+$item.setRule("BatteryPrice-Prepaid Rule 169");
+$item.setPriority(6);
+		outputObject.add($item);
+end
+
+// rule values at B170, header at B7
+rule "BatteryPrice Prepaid_170"
+/* $0 */
+	when
+		$input: /inputObject[string == "PR"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$0");
+$item.setRule("BatteryPrice-Prepaid Rule 170");
+$item.setPriority(3);
+		outputObject.add($item);
+end
+
+// rule values at B171, header at B7
+rule "BatteryPrice Prepaid_171"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 171");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B172, header at B7
+rule "BatteryPrice Prepaid_172"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 172");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B173, header at B7
+rule "BatteryPrice Prepaid_173"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 173");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B174, header at B7
+rule "BatteryPrice Prepaid_174"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 174");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B175, header at B7
+rule "BatteryPrice Prepaid_175"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 175");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B176, header at B7
+rule "BatteryPrice Prepaid_176"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 176");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B177, header at B7
+rule "BatteryPrice Prepaid_177"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 177");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B178, header at B7
+rule "BatteryPrice Prepaid_178"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 178");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B179, header at B7
+rule "BatteryPrice Prepaid_179"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 179");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B180, header at B7
+rule "BatteryPrice Prepaid_180"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 180");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B181, header at B7
+rule "BatteryPrice Prepaid_181"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 181");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B182, header at B7
+rule "BatteryPrice Prepaid_182"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 182");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B183, header at B7
+rule "BatteryPrice Prepaid_183"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 183");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B184, header at B7
+rule "BatteryPrice Prepaid_184"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 184");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B185, header at B7
+rule "BatteryPrice Prepaid_185"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 185");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B186, header at B7
+rule "BatteryPrice Prepaid_186"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 186");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B187, header at B7
+rule "BatteryPrice Prepaid_187"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 187");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B188, header at B7
+rule "BatteryPrice Prepaid_188"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 188");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B189, header at B7
+rule "BatteryPrice Prepaid_189"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 189");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B190, header at B7
+rule "BatteryPrice Prepaid_190"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 190");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B191, header at B7
+rule "BatteryPrice Prepaid_191"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 191");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B192, header at B7
+rule "BatteryPrice Prepaid_192"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 192");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B193, header at B7
+rule "BatteryPrice Prepaid_193"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 193");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B194, header at B7
+rule "BatteryPrice Prepaid_194"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 194");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B195, header at B7
+rule "BatteryPrice Prepaid_195"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 195");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B196, header at B7
+rule "BatteryPrice Prepaid_196"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 196");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B197, header at B7
+rule "BatteryPrice Prepaid_197"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 197");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B198, header at B7
+rule "BatteryPrice Prepaid_198"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 198");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B199, header at B7
+rule "BatteryPrice Prepaid_199"
+/* $3,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$4,000");
+$item.setRule("BatteryPrice-Prepaid Rule 199");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B200, header at B7
+rule "BatteryPrice Prepaid_200"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 200");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B201, header at B7
+rule "BatteryPrice Prepaid_201"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 201");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B202, header at B7
+rule "BatteryPrice Prepaid_202"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 202");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B203, header at B7
+rule "BatteryPrice Prepaid_203"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 203");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B204, header at B7
+rule "BatteryPrice Prepaid_204"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 204");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B205, header at B7
+rule "BatteryPrice Prepaid_205"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 205");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B206, header at B7
+rule "BatteryPrice Prepaid_206"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 206");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B207, header at B7
+rule "BatteryPrice Prepaid_207"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 207");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B208, header at B7
+rule "BatteryPrice Prepaid_208"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 208");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B209, header at B7
+rule "BatteryPrice Prepaid_209"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 209");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B210, header at B7
+rule "BatteryPrice Prepaid_210"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 210");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B211, header at B7
+rule "BatteryPrice Prepaid_211"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 211");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B212, header at B7
+rule "BatteryPrice Prepaid_212"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 212");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B213, header at B7
+rule "BatteryPrice Prepaid_213"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 213");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B214, header at B7
+rule "BatteryPrice Prepaid_214"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 214");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B215, header at B7
+rule "BatteryPrice Prepaid_215"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 215");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B216, header at B7
+rule "BatteryPrice Prepaid_216"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 216");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B217, header at B7
+rule "BatteryPrice Prepaid_217"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 217");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B218, header at B7
+rule "BatteryPrice Prepaid_218"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-Ed"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 218");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B219, header at B7
+rule "BatteryPrice Prepaid_219"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 219");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B220, header at B7
+rule "BatteryPrice Prepaid_220"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 220");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B221, header at B7
+rule "BatteryPrice Prepaid_221"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 221");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B222, header at B7
+rule "BatteryPrice Prepaid_222"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 222");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B223, header at B7
+rule "BatteryPrice Prepaid_223"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 223");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B224, header at B7
+rule "BatteryPrice Prepaid_224"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "CPS Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 224");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B225, header at B7
+rule "BatteryPrice Prepaid_225"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 225");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B226, header at B7
+rule "BatteryPrice Prepaid_226"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 226");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B227, header at B7
+rule "BatteryPrice Prepaid_227"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 227");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B228, header at B7
+rule "BatteryPrice Prepaid_228"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 228");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B229, header at B7
+rule "BatteryPrice Prepaid_229"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 229");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B230, header at B7
+rule "BatteryPrice Prepaid_230"
+/* $99,999 */
+	when
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$99,999");
+$item.setRule("BatteryPrice-Prepaid Rule 230");
+$item.setPriority(6);
+		outputObject.add($item);
+end
+
+// rule values at B231, header at B7
+rule "BatteryPrice Prepaid_231"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 231");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B232, header at B7
+rule "BatteryPrice Prepaid_232"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 232");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B233, header at B7
+rule "BatteryPrice Prepaid_233"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 233");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B234, header at B7
+rule "BatteryPrice Prepaid_234"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 234");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B235, header at B7
+rule "BatteryPrice Prepaid_235"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 235");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B236, header at B7
+rule "BatteryPrice Prepaid_236"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 236");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B237, header at B7
+rule "BatteryPrice Prepaid_237"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 237");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B238, header at B7
+rule "BatteryPrice Prepaid_238"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 238");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B239, header at B7
+rule "BatteryPrice Prepaid_239"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 239");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B240, header at B7
+rule "BatteryPrice Prepaid_240"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 240");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B241, header at B7
+rule "BatteryPrice Prepaid_241"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "MVEA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 241");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B242, header at B7
+rule "BatteryPrice Prepaid_242"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 242");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B243, header at B7
+rule "BatteryPrice Prepaid_243"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 243");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B244, header at B7
+rule "BatteryPrice Prepaid_244"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 244");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B245, header at B7
+rule "BatteryPrice Prepaid_245"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 245");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B246, header at B7
+rule "BatteryPrice Prepaid_246"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 246");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B247, header at B7
+rule "BatteryPrice Prepaid_247"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 247");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B248, header at B7
+rule "BatteryPrice Prepaid_248"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 248");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B249, header at B7
+rule "BatteryPrice Prepaid_249"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 249");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B250, header at B7
+rule "BatteryPrice Prepaid_250"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 250");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B251, header at B7
+rule "BatteryPrice Prepaid_251"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 251");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B252, header at B7
+rule "BatteryPrice Prepaid_252"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 252");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B253, header at B7
+rule "BatteryPrice Prepaid_253"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 253");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B254, header at B7
+rule "BatteryPrice Prepaid_254"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 254");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B255, header at B7
+rule "BatteryPrice Prepaid_255"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 255");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B256, header at B7
+rule "BatteryPrice Prepaid_256"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 256");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B257, header at B7
+rule "BatteryPrice Prepaid_257"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 257");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B258, header at B7
+rule "BatteryPrice Prepaid_258"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 258");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B259, header at B7
+rule "BatteryPrice Prepaid_259"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 259");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B260, header at B7
+rule "BatteryPrice Prepaid_260"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 260");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B261, header at B7
+rule "BatteryPrice Prepaid_261"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 261");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B262, header at B7
+rule "BatteryPrice Prepaid_262"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 262");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B263, header at B7
+rule "BatteryPrice Prepaid_263"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 263");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B264, header at B7
+rule "BatteryPrice Prepaid_264"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Delmarva"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 264");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B265, header at B7
+rule "BatteryPrice Prepaid_265"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 265");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B266, header at B7
+rule "BatteryPrice Prepaid_266"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "SMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 266");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B267, header at B7
+rule "BatteryPrice Prepaid_267"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 267");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B268, header at B7
+rule "BatteryPrice Prepaid_268"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 268");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B269, header at B7
+rule "BatteryPrice Prepaid_269"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 269");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B270, header at B7
+rule "BatteryPrice Prepaid_270"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 270");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B271, header at B7
+rule "BatteryPrice Prepaid_271"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 271");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B272, header at B7
+rule "BatteryPrice Prepaid_272"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "Rockland Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 272");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B273, header at B7
+rule "BatteryPrice Prepaid_273"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 273");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B274, header at B7
+rule "BatteryPrice Prepaid_274"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 274");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B275, header at B7
+rule "BatteryPrice Prepaid_275"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 275");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B276, header at B7
+rule "BatteryPrice Prepaid_276"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 276");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B277, header at B7
+rule "BatteryPrice Prepaid_277"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 277");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B278, header at B7
+rule "BatteryPrice Prepaid_278"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 278");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B279, header at B7
+rule "BatteryPrice Prepaid_279"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 279");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B280, header at B7
+rule "BatteryPrice Prepaid_280"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 280");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B281, header at B7
+rule "BatteryPrice Prepaid_281"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-ED"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 281");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B282, header at B7
+rule "BatteryPrice Prepaid_282"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 282");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B283, header at B7
+rule "BatteryPrice Prepaid_283"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 283");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B284, header at B7
+rule "BatteryPrice Prepaid_284"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Penelec"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 284");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B285, header at B7
+rule "BatteryPrice Prepaid_285"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 285");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B286, header at B7
+rule "BatteryPrice Prepaid_286"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 286");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B287, header at B7
+rule "BatteryPrice Prepaid_287"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy Progress"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 287");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B288, header at B7
+rule "BatteryPrice Prepaid_288"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 288");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B289, header at B7
+rule "BatteryPrice Prepaid_289"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 289");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B290, header at B7
+rule "BatteryPrice Prepaid_290"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 290");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B291, header at B7
+rule "BatteryPrice Prepaid_291"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 291");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B292, header at B7
+rule "BatteryPrice Prepaid_292"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 292");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B293, header at B7
+rule "BatteryPrice Prepaid_293"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 293");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B294, header at B7
+rule "BatteryPrice Prepaid_294"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Washington Electric Co-Op"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 294");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B295, header at B7
+rule "BatteryPrice Prepaid_295"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 295");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B296, header at B7
+rule "BatteryPrice Prepaid_296"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 296");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B297, header at B7
+rule "BatteryPrice Prepaid_297"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 297");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B298, header at B7
+rule "BatteryPrice Prepaid_298"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 298");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B299, header at B7
+rule "BatteryPrice Prepaid_299"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 299");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B300, header at B7
+rule "BatteryPrice Prepaid_300"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 300");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B301, header at B7
+rule "BatteryPrice Prepaid_301"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 301");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B302, header at B7
+rule "BatteryPrice Prepaid_302"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 302");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B303, header at B7
+rule "BatteryPrice Prepaid_303"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 303");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B304, header at B7
+rule "BatteryPrice Prepaid_304"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 304");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B305, header at B7
+rule "BatteryPrice Prepaid_305"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "MVEA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 305");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B306, header at B7
+rule "BatteryPrice Prepaid_306"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 306");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B307, header at B7
+rule "BatteryPrice Prepaid_307"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 307");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B308, header at B7
+rule "BatteryPrice Prepaid_308"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 308");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B309, header at B7
+rule "BatteryPrice Prepaid_309"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 309");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B310, header at B7
+rule "BatteryPrice Prepaid_310"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 310");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B311, header at B7
+rule "BatteryPrice Prepaid_311"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 311");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B312, header at B7
+rule "BatteryPrice Prepaid_312"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 312");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B313, header at B7
+rule "BatteryPrice Prepaid_313"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 313");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B314, header at B7
+rule "BatteryPrice Prepaid_314"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 314");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B315, header at B7
+rule "BatteryPrice Prepaid_315"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 315");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B316, header at B7
+rule "BatteryPrice Prepaid_316"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 316");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B317, header at B7
+rule "BatteryPrice Prepaid_317"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 317");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B318, header at B7
+rule "BatteryPrice Prepaid_318"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 318");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B319, header at B7
+rule "BatteryPrice Prepaid_319"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 319");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B320, header at B7
+rule "BatteryPrice Prepaid_320"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 320");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B321, header at B7
+rule "BatteryPrice Prepaid_321"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 321");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B322, header at B7
+rule "BatteryPrice Prepaid_322"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 322");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B323, header at B7
+rule "BatteryPrice Prepaid_323"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 323");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B324, header at B7
+rule "BatteryPrice Prepaid_324"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 324");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B325, header at B7
+rule "BatteryPrice Prepaid_325"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 325");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B326, header at B7
+rule "BatteryPrice Prepaid_326"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 326");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B327, header at B7
+rule "BatteryPrice Prepaid_327"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 327");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B328, header at B7
+rule "BatteryPrice Prepaid_328"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Delmarva"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 328");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B329, header at B7
+rule "BatteryPrice Prepaid_329"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 329");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B330, header at B7
+rule "BatteryPrice Prepaid_330"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "SMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 330");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B331, header at B7
+rule "BatteryPrice Prepaid_331"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 331");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B332, header at B7
+rule "BatteryPrice Prepaid_332"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 332");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B333, header at B7
+rule "BatteryPrice Prepaid_333"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 333");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B334, header at B7
+rule "BatteryPrice Prepaid_334"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 334");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B335, header at B7
+rule "BatteryPrice Prepaid_335"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 335");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B336, header at B7
+rule "BatteryPrice Prepaid_336"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "Rockland Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 336");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B337, header at B7
+rule "BatteryPrice Prepaid_337"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 337");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B338, header at B7
+rule "BatteryPrice Prepaid_338"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 338");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B339, header at B7
+rule "BatteryPrice Prepaid_339"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 339");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B340, header at B7
+rule "BatteryPrice Prepaid_340"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 340");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B341, header at B7
+rule "BatteryPrice Prepaid_341"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 341");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B342, header at B7
+rule "BatteryPrice Prepaid_342"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 342");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B343, header at B7
+rule "BatteryPrice Prepaid_343"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 343");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B344, header at B7
+rule "BatteryPrice Prepaid_344"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 344");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B345, header at B7
+rule "BatteryPrice Prepaid_345"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-ED"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 345");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B346, header at B7
+rule "BatteryPrice Prepaid_346"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 346");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B347, header at B7
+rule "BatteryPrice Prepaid_347"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 347");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B348, header at B7
+rule "BatteryPrice Prepaid_348"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Penelec"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 348");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B349, header at B7
+rule "BatteryPrice Prepaid_349"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 349");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B350, header at B7
+rule "BatteryPrice Prepaid_350"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 350");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B351, header at B7
+rule "BatteryPrice Prepaid_351"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy Progress"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 351");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B352, header at B7
+rule "BatteryPrice Prepaid_352"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 352");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B353, header at B7
+rule "BatteryPrice Prepaid_353"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 353");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B354, header at B7
+rule "BatteryPrice Prepaid_354"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 354");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B355, header at B7
+rule "BatteryPrice Prepaid_355"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 355");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B356, header at B7
+rule "BatteryPrice Prepaid_356"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 356");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B357, header at B7
+rule "BatteryPrice Prepaid_357"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 357");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B358, header at B7
+rule "BatteryPrice Prepaid_358"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Washington Electric Co-Op"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 358");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B359, header at B7
+rule "BatteryPrice Prepaid_359"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 359");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B360, header at B7
+rule "BatteryPrice Prepaid_360"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 360");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B361, header at B7
+rule "BatteryPrice Prepaid_361"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 361");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B362, header at B7
+rule "BatteryPrice Prepaid_362"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 362");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B363, header at B7
+rule "BatteryPrice Prepaid_363"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 363");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B364, header at B7
+rule "BatteryPrice Prepaid_364"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 364");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B365, header at B7
+rule "BatteryPrice Prepaid_365"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 365");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B366, header at B7
+rule "BatteryPrice Prepaid_366"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 366");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B367, header at B7
+rule "BatteryPrice Prepaid_367"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 367");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B368, header at B7
+rule "BatteryPrice Prepaid_368"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 368");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B369, header at B7
+rule "BatteryPrice Prepaid_369"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "MVEA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 369");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B370, header at B7
+rule "BatteryPrice Prepaid_370"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 370");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B371, header at B7
+rule "BatteryPrice Prepaid_371"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 371");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B372, header at B7
+rule "BatteryPrice Prepaid_372"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 372");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B373, header at B7
+rule "BatteryPrice Prepaid_373"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 373");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B374, header at B7
+rule "BatteryPrice Prepaid_374"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 374");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B375, header at B7
+rule "BatteryPrice Prepaid_375"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 375");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B376, header at B7
+rule "BatteryPrice Prepaid_376"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 376");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B377, header at B7
+rule "BatteryPrice Prepaid_377"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 377");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B378, header at B7
+rule "BatteryPrice Prepaid_378"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 378");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B379, header at B7
+rule "BatteryPrice Prepaid_379"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 379");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B380, header at B7
+rule "BatteryPrice Prepaid_380"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 380");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B381, header at B7
+rule "BatteryPrice Prepaid_381"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 381");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B382, header at B7
+rule "BatteryPrice Prepaid_382"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 382");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B383, header at B7
+rule "BatteryPrice Prepaid_383"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 383");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B384, header at B7
+rule "BatteryPrice Prepaid_384"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$7,000");
+$item.setRule("BatteryPrice-Prepaid Rule 384");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B385, header at B7
+rule "BatteryPrice Prepaid_385"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 385");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B386, header at B7
+rule "BatteryPrice Prepaid_386"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 386");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B387, header at B7
+rule "BatteryPrice Prepaid_387"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 387");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B388, header at B7
+rule "BatteryPrice Prepaid_388"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 388");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B389, header at B7
+rule "BatteryPrice Prepaid_389"
+/* $5,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$6,000");
+$item.setRule("BatteryPrice-Prepaid Rule 389");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B390, header at B7
+rule "BatteryPrice Prepaid_390"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 390");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B391, header at B7
+rule "BatteryPrice Prepaid_391"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 391");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B392, header at B7
+rule "BatteryPrice Prepaid_392"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Delmarva"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 392");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B393, header at B7
+rule "BatteryPrice Prepaid_393"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 393");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B394, header at B7
+rule "BatteryPrice Prepaid_394"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "SMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 394");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B395, header at B7
+rule "BatteryPrice Prepaid_395"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 395");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B396, header at B7
+rule "BatteryPrice Prepaid_396"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 396");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B397, header at B7
+rule "BatteryPrice Prepaid_397"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 397");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B398, header at B7
+rule "BatteryPrice Prepaid_398"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 398");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B399, header at B7
+rule "BatteryPrice Prepaid_399"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 399");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B400, header at B7
+rule "BatteryPrice Prepaid_400"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "Rockland Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 400");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B401, header at B7
+rule "BatteryPrice Prepaid_401"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 401");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B402, header at B7
+rule "BatteryPrice Prepaid_402"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 402");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B403, header at B7
+rule "BatteryPrice Prepaid_403"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 403");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B404, header at B7
+rule "BatteryPrice Prepaid_404"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 404");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B405, header at B7
+rule "BatteryPrice Prepaid_405"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 405");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B406, header at B7
+rule "BatteryPrice Prepaid_406"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 406");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B407, header at B7
+rule "BatteryPrice Prepaid_407"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 407");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B408, header at B7
+rule "BatteryPrice Prepaid_408"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 408");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B409, header at B7
+rule "BatteryPrice Prepaid_409"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-ED"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 409");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B410, header at B7
+rule "BatteryPrice Prepaid_410"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 410");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B411, header at B7
+rule "BatteryPrice Prepaid_411"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 411");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B412, header at B7
+rule "BatteryPrice Prepaid_412"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Penelec"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 412");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B413, header at B7
+rule "BatteryPrice Prepaid_413"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 413");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B414, header at B7
+rule "BatteryPrice Prepaid_414"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 414");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B415, header at B7
+rule "BatteryPrice Prepaid_415"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy Progress"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 415");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B416, header at B7
+rule "BatteryPrice Prepaid_416"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 416");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B417, header at B7
+rule "BatteryPrice Prepaid_417"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 417");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B418, header at B7
+rule "BatteryPrice Prepaid_418"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 418");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B419, header at B7
+rule "BatteryPrice Prepaid_419"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 419");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B420, header at B7
+rule "BatteryPrice Prepaid_420"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 420");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B421, header at B7
+rule "BatteryPrice Prepaid_421"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 421");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B422, header at B7
+rule "BatteryPrice Prepaid_422"
+/* $9,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Washington Electric Co-Op"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$9,000");
+$item.setRule("BatteryPrice-Prepaid Rule 422");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B423, header at B7
+rule "BatteryPrice Prepaid_423"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "APS"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 423");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B424, header at B7
+rule "BatteryPrice Prepaid_424"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "AZ", utility == "TEP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 424");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B425, header at B7
+rule "BatteryPrice Prepaid_425"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "APU"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 425");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B426, header at B7
+rule "BatteryPrice Prepaid_426"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "LADWP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 426");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B427, header at B7
+rule "BatteryPrice Prepaid_427"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "Moreno Valley Electric Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 427");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B428, header at B7
+rule "BatteryPrice Prepaid_428"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CA", utility == "PG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 428");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B429, header at B7
+rule "BatteryPrice Prepaid_429"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SCE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 429");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B430, header at B7
+rule "BatteryPrice Prepaid_430"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SDG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 430");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B431, header at B7
+rule "BatteryPrice Prepaid_431"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "SMUD"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 431");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B432, header at B7
+rule "BatteryPrice Prepaid_432"
+/* $8,150 */
+	when
+		$input: /inputObject[string == "CA", utility == "Modesto Irrigation District"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$14,000");
+$item.setRule("BatteryPrice-Prepaid Rule 432");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B433, header at B7
+rule "BatteryPrice Prepaid_433"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "MVEA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 433");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B434, header at B7
+rule "BatteryPrice Prepaid_434"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Colorado Springs Utilities"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 434");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B435, header at B7
+rule "BatteryPrice Prepaid_435"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "Fort Collins Utility"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 435");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B436, header at B7
+rule "BatteryPrice Prepaid_436"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "IREA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 436");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B437, header at B7
+rule "BatteryPrice Prepaid_437"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "United Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 437");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B438, header at B7
+rule "BatteryPrice Prepaid_438"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CO", utility == "XCEL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 438");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B439, header at B7
+rule "BatteryPrice Prepaid_439"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "CT", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 439");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B440, header at B7
+rule "BatteryPrice Prepaid_440"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "DC", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 440");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B441, header at B7
+rule "BatteryPrice Prepaid_441"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 441");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B442, header at B7
+rule "BatteryPrice Prepaid_442"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "FPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 442");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B443, header at B7
+rule "BatteryPrice Prepaid_443"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "OUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 443");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B444, header at B7
+rule "BatteryPrice Prepaid_444"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "FL", utility == "TECO Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 444");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B445, header at B7
+rule "BatteryPrice Prepaid_445"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 445");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B446, header at B7
+rule "BatteryPrice Prepaid_446"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "HELCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 446");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B447, header at B7
+rule "BatteryPrice Prepaid_447"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "KIUC"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 447");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B448, header at B7
+rule "BatteryPrice Prepaid_448"
+/* $7,000 */
+	when
+		$input: /inputObject[string == "HI", utility == "MECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,900");
+$item.setRule("BatteryPrice-Prepaid Rule 448");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B449, header at B7
+rule "BatteryPrice Prepaid_449"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "IL", utility == "ComEd"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 449");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B450, header at B7
+rule "BatteryPrice Prepaid_450"
+/* $6,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,200");
+$item.setRule("BatteryPrice-Prepaid Rule 450");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B451, header at B7
+rule "BatteryPrice Prepaid_451"
+/* $6,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,200");
+$item.setRule("BatteryPrice-Prepaid Rule 451");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B452, header at B7
+rule "BatteryPrice Prepaid_452"
+/* $6,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "UNITIL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,200");
+$item.setRule("BatteryPrice-Prepaid Rule 452");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B453, header at B7
+rule "BatteryPrice Prepaid_453"
+/* $6,000 */
+	when
+		$input: /inputObject[string == "MA", utility == "WMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$10,200");
+$item.setRule("BatteryPrice-Prepaid Rule 453");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B454, header at B7
+rule "BatteryPrice Prepaid_454"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Choptank Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 454");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B455, header at B7
+rule "BatteryPrice Prepaid_455"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "BG&E"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 455");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B456, header at B7
+rule "BatteryPrice Prepaid_456"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Delmarva"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 456");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B457, header at B7
+rule "BatteryPrice Prepaid_457"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "PEPCO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 457");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B458, header at B7
+rule "BatteryPrice Prepaid_458"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "SMECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 458");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B459, header at B7
+rule "BatteryPrice Prepaid_459"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "MD", utility == "Potomac Edison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 459");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B460, header at B7
+rule "BatteryPrice Prepaid_460"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NH", utility == "Eversource"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 460");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B461, header at B7
+rule "BatteryPrice Prepaid_461"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "ACE"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 461");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B462, header at B7
+rule "BatteryPrice Prepaid_462"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "JCP&L"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 462");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B463, header at B7
+rule "BatteryPrice Prepaid_463"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "PSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 463");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B464, header at B7
+rule "BatteryPrice Prepaid_464"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NJ", utility == "Rockland Electric"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 464");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B465, header at B7
+rule "BatteryPrice Prepaid_465"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NM", utility == "PNM"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 465");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B466, header at B7
+rule "BatteryPrice Prepaid_466"
+/* $7,650 */
+	when
+		$input: /inputObject[string == "NV", utility == "NV Energy South"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,500");
+$item.setRule("BatteryPrice-Prepaid Rule 466");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B467, header at B7
+rule "BatteryPrice Prepaid_467"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "Central Hudson"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 467");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B468, header at B7
+rule "BatteryPrice Prepaid_468"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "ConEdison"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 468");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B469, header at B7
+rule "BatteryPrice Prepaid_469"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 469");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B470, header at B7
+rule "BatteryPrice Prepaid_470"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "NYSE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 470");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B471, header at B7
+rule "BatteryPrice Prepaid_471"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "NY", utility == "O&R"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 471");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B472, header at B7
+rule "BatteryPrice Prepaid_472"
+/* $6,625 */
+	when
+		$input: /inputObject[string == "NY", utility == "PSEGLI"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 472");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B473, header at B7
+rule "BatteryPrice Prepaid_473"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Met-ED"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 473");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B474, header at B7
+rule "BatteryPrice Prepaid_474"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PECO"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 474");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B475, header at B7
+rule "BatteryPrice Prepaid_475"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "PPL"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 475");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B476, header at B7
+rule "BatteryPrice Prepaid_476"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "PA", utility == "Penelec"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 476");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B477, header at B7
+rule "BatteryPrice Prepaid_477"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "RI", utility == "National Grid"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 477");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B478, header at B7
+rule "BatteryPrice Prepaid_478"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 478");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B479, header at B7
+rule "BatteryPrice Prepaid_479"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "Duke Energy Progress"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 479");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B480, header at B7
+rule "BatteryPrice Prepaid_480"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "SC", utility == "SCE&G"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 480");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B481, header at B7
+rule "BatteryPrice Prepaid_481"
+/* $13,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Centerpoint Energy"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 481");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B482, header at B7
+rule "BatteryPrice Prepaid_482"
+/* $13,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "Oncor"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 482");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B483, header at B7
+rule "BatteryPrice Prepaid_483"
+/* $13,000 */
+	when
+		$input: /inputObject[string == "TX", utility == "TNMP"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 483");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B484, header at B7
+rule "BatteryPrice Prepaid_484"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Green Mountain Power"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 484");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B485, header at B7
+rule "BatteryPrice Prepaid_485"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Vermont Electric Cooperative"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 485");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+
+// rule values at B486, header at B7
+rule "BatteryPrice Prepaid_486"
+/* $10,000 */
+	when
+		$input: /inputObject[string == "VT", utility == "Washington Electric Co-Op"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("$13,900");
+$item.setRule("BatteryPrice-Prepaid Rule 486");
+$item.setPriority(4);
+		outputObject.add($item);
+end
+

@@ -1,0 +1,19 @@
+package com.sunrun.pricing.quarkus;
+unit RulesEngineUnit;
+//generated from Decision Table
+import com.sunrun.pricing.rest.*;
+import java.math.BigDecimal;
+query RulesEngineQuery $outputObject: /outputObject end
+// rule values at B12, header at B7
+rule "BatteryPrice Monthly_12"
+/* $1,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("0.029");
+$item.setRule("Monthly Rule 12");
+$item.setPriority(5);
+		outputObject.add($item);
+end
+
