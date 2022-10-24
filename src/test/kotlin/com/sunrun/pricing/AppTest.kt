@@ -17,8 +17,10 @@ class AppTest {
     fun test() {
         val input = """
             {
-               "string": "CA",
-               "utility": "PG&E",
+               "string": "State12",
+               "utility": "Utility12",
+               "salesDivision": "Sales  Division12",
+               "salesPartner": "Sales Partner12",
                "bigDecimal": 0
             }
         """.trimIndent()
