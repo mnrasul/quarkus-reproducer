@@ -19,9 +19,11 @@ import java.math.BigDecimal
 data class RulesEngineInput(
     val string: String,
     val utility: String,
+    val salesDivision: String,
+    val salesPartner: String,
     val bigDecimal: BigDecimal,
 ) {
-    constructor(request: HandlerNameRequest) : this(request.string, request.utility, request.bigDecimal)
+    constructor(request: HandlerNameRequest) : this(request.string, request.utility, request.salesDivision, request.salesPartner, request.bigDecimal)
 }
 
 @Serializable
@@ -38,6 +40,8 @@ data class RulesEngineOutput(
 data class HandlerNameRequest(
     val string: String,
     val utility: String,
+    val salesDivision: String,
+    val salesPartner: String,
     val bigDecimal: BigDecimal,
 )
 
