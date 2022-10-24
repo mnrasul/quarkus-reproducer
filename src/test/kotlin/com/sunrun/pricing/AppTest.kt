@@ -17,7 +17,7 @@ class AppTest {
     fun test() {
         val input = """
             {
-               "string": "CA",
+               "string": "CA12",
                "utility": "PG&E",
                "bigDecimal": 0
             }
