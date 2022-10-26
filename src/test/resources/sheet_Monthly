@@ -17,3 +17,16 @@ $item.setPriority(5);
 		outputObject.add($item);
 end
 
+// rule values at B13, header at B7
+rule "BatteryPrice Monthly_13"
+/* $1,000 */
+	when
+		$input: /inputObject[string == "CA"]
+	then
+		RulesEngineOutput $item = new RulesEngineOutput();
+		$item.setString("0.029");
+$item.setRule("Monthly Rule 13");
+$item.setPriority(6);
+		outputObject.add($item);
+end
+

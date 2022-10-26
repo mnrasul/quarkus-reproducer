@@ -1,6 +1,5 @@
 package com.sunrun.pricing.helpers
 
-import com.sunrun.pricing.config.ConfigService
 import io.quarkus.arc.DefaultBean
 import kotlinx.serialization.json.Json
 import javax.enterprise.context.Dependent
@@ -17,8 +16,4 @@ class ConfigServiceProducer {
     @Produces
     @DefaultBean
     fun json() = json
-
-    @Produces
-    @DefaultBean
-    fun configService() = ConfigService(json)
 }

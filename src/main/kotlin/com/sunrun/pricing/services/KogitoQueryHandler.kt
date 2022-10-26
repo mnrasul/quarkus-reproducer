@@ -7,7 +7,6 @@ import org.kie.kogito.incubation.rules.QueryId
 import org.kie.kogito.incubation.rules.RuleUnitIds
 import javax.enterprise.context.ApplicationScoped
 import com.sunrun.pricing.rest.*
-import com.sunrun.pricing.config.ConfigService
 import com.sunrun.pricing.helpers.extensions.get
 import org.drools.ruleunits.api.DataSource
 
@@ -15,7 +14,6 @@ import org.drools.ruleunits.api.DataSource
 class KogitoQueryHandler(
     private val appRoot: AppRoot,
     private val ruleUnitService: KotlinxRuleUnitService,
-    private val configService: ConfigService,
 ) {
     suspend fun getSheet(request: HandlerNameRequest): List<RulesEngineOutput> {
         /**
@@ -28,15 +26,16 @@ class KogitoQueryHandler(
         val query = queryId("RulesEngineQuery")
         val inputObject = DataSource.createStore<RulesEngineInput>()
         inputObject.add(RulesEngineInput(request))
-        val config = configService.configStore
-        val configStore = DataSource.createSingleton<ConfigService.Config>().apply { set(config) }
         val outputObject = DataSource.createStore<RulesEngineOutput>()
 
-        val unit = RulesEngineUnit(inputObject, configStore, outputObject)
-        return ruleUnitService.evaluate(query, unit)
-            .map { it as RulesEngineOutput }.ifEmpty {
-                throw IllegalArgumentException("No drools rule matches found for request $request")
+        val unit = RulesEngineUnit(inputObject, outputObject)
+        val rulesEngineOutputs = mutableListOf<RulesEngineOutput>()
+        ruleUnitService.evaluate(query, unit)?.toList()?.forEach { map ->
+            map.keys.forEach {
+                rulesEngineOutputs.add(map[it] as RulesEngineOutput)
             }
+        }
+        return rulesEngineOutputs
     }
 
     fun queryId(query: String): QueryId = appRoot.get<RuleUnitIds>().get<RulesEngineUnit>().queries().get(query)

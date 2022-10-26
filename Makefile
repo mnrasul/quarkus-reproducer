@@ -17,10 +17,10 @@ ifeq ($(uname_m),arm64)
 	./manageAWS.sh build graalvm
 else
 	echo "Building on Intel"
-	./manageAWS.sh build quay.io/quarkus/ubi-quarkus-native-image:22.1.0-java17
+	./manageAWS.sh build quay.io/quarkus/ubi-quarkus-native-image:22.3.0-java17
 endif
 else
-	./manageAWS.sh build quay.io/quarkus/ubi-quarkus-native-image:22.1.0-java17
+	./manageAWS.sh build quay.io/quarkus/ubi-quarkus-native-image:22.3.0-java17
 endif
 
 clean:

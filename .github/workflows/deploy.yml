@@ -10,7 +10,7 @@ env:
   MAJSTG: majstg
   PRD: prd
   SERVICE_NAME: pricing-lambda
-  GRAAL_VM_VERSION: 22.1.0
+  GRAAL_VM_VERSION: 22.3.0
   JAVA_VERSION: java17
   AWS_REGION: us-west-2
   S3_ARTIFACT_BUCKET: test-github-action-artifacts

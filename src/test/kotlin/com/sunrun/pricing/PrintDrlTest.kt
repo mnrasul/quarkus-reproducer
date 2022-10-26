@@ -28,7 +28,7 @@ class PrintDrlTest : FreeSpec({
         listOf(
             "Monthly",
         ).forEach {
-            getSheets("src/main/resources/rules/sheet.xlsx", it)
+            getSheets("src/main/resources/rules/sheet.drl.xlsx", it)
         }
     }
 })

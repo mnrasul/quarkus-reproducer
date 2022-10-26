@@ -29,7 +29,7 @@
         <quarkus.platform.version>2.13.3.Final</quarkus.platform.version>
         <serialization.version>1.4.0</serialization.version>
         <surefire-plugin.version>2.22.1</surefire-plugin.version>
-        <graalvm.version>22.2.0</graalvm.version>
+        <graalvm.version>22.3.0</graalvm.version>
     </properties>
     <dependencyManagement>
         <dependencies>

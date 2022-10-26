@@ -5,7 +5,7 @@ on:
 
 env:
   EPHEMERAL: pr-${{ github.event.pull_request.number }}
-  GRAAL_VM_VERSION: 22.1.0
+  GRAAL_VM_VERSION: 22.3.0
   JAVA_VERSION: java17
   NODE_VERSION: 12.18.4
   MVN_VERSION: 3.6.3

@@ -4,6 +4,7 @@ package com.sunrun.pricing.quarkus
 // import com.sunrun.pricing.serialization.polySerializers
 import kotlinx.serialization.json.Json
 import org.drools.ruleunits.api.RuleUnitData
+import org.kie.api.runtime.rule.QueryResults
 import org.kie.kogito.incubation.common.Id
 import org.kie.kogito.incubation.rules.QueryId
 import org.kie.kogito.incubation.rules.RuleUnitId
@@ -28,11 +29,11 @@ class KotlinxRuleUnitService(
         }
     }
 
-    final fun evaluate(id: Id, input: RuleUnitData): List<Any> {
+    final fun evaluate(id: Id, input: RuleUnitData): QueryResults? {
         val (ruleUnitId, queryId) = getIds(id)
         val ruleUnit = ruleUnits.get().create(input.javaClass)
         val instance = ruleUnit.createInstance(input)
-        return instance.executeQuery(queryId.queryId()).toList()
+        return instance.executeQuery(queryId.queryId())
     }
 
     fun getIds(id: Id): Pair<RuleUnitId, QueryId> {
